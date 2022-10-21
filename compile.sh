@@ -1,1 +1,0 @@
-mvnd clean package -o
