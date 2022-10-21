@@ -1,0 +1,17 @@
+name: BlockBreaker
+version: '${project.version}'
+main: me.wuzzy.space.blockbreaker.BlockBreaker
+api-version: 1.18
+authors: [ WuzzyLV ]
+description: Blocks that break blocks
+
+commands:
+  bbgive:
+    description: Gives you a BlockBreaker
+    usage: /<command>
+  bbtest:
+    description: lets u test
+    usage: /<command>
+
+libraries:
+  - 'com.h2database:h2:2.1.214'
