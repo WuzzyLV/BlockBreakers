@@ -16,6 +16,7 @@ import java.util.List;
 
 public final class BlockBreaker extends JavaPlugin {
 
+    private HashMap<Block, BlockBreakerObject> hashMap= new HashMap<Block, BlockBreakerObject>();
     public SQL sql = new SQL(this);
 
     @Override
@@ -25,9 +26,9 @@ public final class BlockBreaker extends JavaPlugin {
         sql.loadFromDataBase();
 
 
-        Events events = new Events(this);
-        GiveCommand giveCommand= new GiveCommand(this);
-        TestCommand testCommand= new TestCommand(this);
+        new Events(this);
+        new GiveCommand(this);
+        new TestCommand(this);
     }
 
     @Override
@@ -35,7 +36,6 @@ public final class BlockBreaker extends JavaPlugin {
         sql.closeConnection();
     }
 
-    private HashMap<Block, BlockBreakerObject> hashMap= new HashMap<Block, BlockBreakerObject>();
     public void addToHashMap(Block block, BlockBreakerObject obj){
         hashMap.put(block,obj);
     }

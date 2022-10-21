@@ -4,14 +4,13 @@ import me.wuzzy.space.blockbreaker.BlockBreaker;
 import me.wuzzy.space.blockbreaker.BlockBreakerObject;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.h2.jdbcx.JdbcConnectionPool;
 
 import java.sql.*;
 
 public class SQL {
-    static BlockBreaker instance;
+    BlockBreaker instance = null;
     public SQL(BlockBreaker inst){
         instance=inst;
     }

@@ -15,7 +15,8 @@ public class BlockBreakerObject {
     Block block;
     BlockData blockData;
     Location location;
-    int level,speed;
+    int level;
+    int speed;
 
     public BlockBreakerObject(Block blck, int lvl, BlockBreaker instance){
         block=blck;
